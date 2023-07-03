@@ -1,21 +1,9 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-#!pip install streamlit
-
-
-# In[2]:
-
-
 import streamlit as st
 import pandas as pd
 import pickle
 
 
-# In[3]:
+
 
 
 model = pickle.load(open("LinearRegressionModel.pkl",'rb'))
@@ -53,7 +41,7 @@ if __name__ == "__main__":
     
 
 
-# In[ ]:
+
 
 
 
