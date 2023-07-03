@@ -30,11 +30,16 @@ def main():
 
 
     user_df = pd.DataFrame(user_data, index=[0])
+    button = st.button("Predict")
+    if button:
+         prediction = model.predict(user_df)
 
-    prediction = model.predict(user_df)
+         st.subheader("Predicted Selling Price")
+         st.write("The predicted selling price for the car is:", prediction)
+        
+        
 
-    st.subheader("Predicted Selling Price")
-    st.write("The predicted selling price for the car is:", prediction)
+         
 
 if __name__ == "__main__":
     main()
